@@ -4,7 +4,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql///leyou?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql:///heima?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
