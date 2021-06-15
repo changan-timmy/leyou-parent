@@ -1,7 +1,10 @@
 package com.leyou.item.dao;
 
+import com.leyou.common.pojo.PageResult;
+import com.leyou.common.pojo.Pageable;
+import com.leyou.item.bo.BrandBo;
 import com.leyou.item.pojo.Brand;
-import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BrandDao extends JpaRepository<Brand,Long> {
+public interface BrandDao {
+    PageResult<Brand> findPageByBo(BrandBo bo, Pageable pageable);
 }

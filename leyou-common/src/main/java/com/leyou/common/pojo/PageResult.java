@@ -4,7 +4,7 @@ import java.util.List;
 
 public class PageResult<T> {
     private Long total;
-    private Integer totalPage;
+    private Long totalPage;
     private List<T> list;
 
     public Long getTotal() {
@@ -15,11 +15,11 @@ public class PageResult<T> {
         this.total = total;
     }
 
-    public Integer getTotalPage() {
+    public Long getTotalPage() {
         return totalPage;
     }
 
-    public void setTotalPage(Integer totalPage) {
+    public void setTotalPage(Long totalPage) {
         this.totalPage = totalPage;
     }
 

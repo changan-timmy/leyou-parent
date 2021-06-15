@@ -7,9 +7,17 @@ eureka:
   client:
     service-url:
       defaultZone: http://192.168.1.161:10086/eureka/
-    # 设置拉取服务时间间隔
-    registry-fetch-interval-seconds: 5
+    eureka.client.registry-fetch-interval-seconds: 5
 zuul:
   prefix: /api
   routes:
     item-service: /item/**
+  host:
+    connect-timeout-millis: 20000
+    connection-request-timeout-millis: 60000
+
+
+
+
+
+
